@@ -163,42 +163,7 @@ body {
     }
 }
 @media (max-width: 450px) {
-    .goals {
-        margin: 10px 0;
-        list-style: none;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .all-list {
-        margin: auto;
-        display: list-item;
-        font-size: 5px;
-    }
     
-    .list {
-        margin: auto;
-        padding: 50%;
-        font-size: 5px;
-    }
-    
-    .all-list p{
-        margin: 100%;
-        border: 100%;
-        font-size: 5px;
-        margin: 2px;
-        text-align: left;
-
-    }
-
-    .all-list h2 {
-        margin: auto;
-        padding: 100%;
-        font-size: 20px;
-        padding: 10px;
-        text-align: left;
-    }
 }
 
 
