@@ -167,7 +167,7 @@ body {
         margin: 50px;
         padding: 20px;
         display: absolute;
-        flex-grow: 5;
+        flex-grow: 100;
     }
 
     .all-list h2 {
