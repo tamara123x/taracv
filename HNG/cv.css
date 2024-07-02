@@ -166,6 +166,7 @@ body {
    .list {
         margin: 50px;
         padding: 20px;
+        display-flex: absolute;
     }
 
     .all-list h2 {
