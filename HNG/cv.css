@@ -178,7 +178,7 @@ body {
         margin: 50px;
         padding: 10px;
         display: absolute;
-        witdth: 350px;
+        witdth: 100%;
         flex: 1;
 
     }
