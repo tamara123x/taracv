@@ -165,7 +165,7 @@ body {
 @media (max-width: 450px) {
    .list {
         margin: 50px;
-        padding: 20px;
+        padding: 10px;
         display: absolute;
         witdth: 100%;
 
