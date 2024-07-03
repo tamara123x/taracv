@@ -26,7 +26,19 @@ body {
     padding: 20px;
     text-align: center;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
 } 
+
+
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+        text-align: center; /* Center items vertically on mobile */
+    }
+}
 
 
 /* PROFILE */
@@ -168,6 +180,7 @@ body {
         padding: 10px;
         display: absolute;
         witdth: 350px;
+        flex: 1;
 
     }
 
