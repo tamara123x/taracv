@@ -18,29 +18,6 @@ body {
 }
 /*rgb(31, 42, 71);*/ 
 
-.container {
-    background-color:rgb(46, 60, 98);
-    border-radius: 8px; 
-    margin: 20px auto;
-    max-width: 1200px;
-    padding: 20px;
-    text-align: center;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:10px;
-} 
-
-
-@media (max-width: 450px) {
-    .container {
-        flex-direction: column;
-        text-align: center; /* Center items vertically on mobile */
-    }
-}
-
-
 /* PROFILE */
 #myprofile {
     padding-top: 100px;
@@ -81,7 +58,7 @@ body {
     width: auto;
 }
 
-@media (max-width: 945px) {
+@media (max-width: 1200px) {
     .contain {
         align-items: center;
         flex-direction: column;
@@ -95,7 +72,7 @@ body {
     }
 
     .profile p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 28px;
     }
     
@@ -107,34 +84,77 @@ body {
     }
 }
 
+@media (max-width: 450px) {
+    .profile p {
+        font-size: 17px;
+        line-height: 25px;
+
+    }
+
+    .profile h2 {
+        font-size: 35px;
+    }
+
+}
+
+@media (max-width: 360px) {
+    .profile p {
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .profile h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+}
+
 
 /* GOALS */
+/* Ensure the container takes the full screen */
+.container {
+    background-color: rgb(46, 60, 98);
+    border-radius: 8px;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh; /* Ensure it at least takes full viewport height */
+    display: flex;
+    justify-content: center; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+}
+
+/* Ensure all-list takes the full screen */
 .goals {
     padding-top: 10px;
     margin: 20px 0;
 }
 
-.goals h3{
-    font-size: 30px;
-}
-
 .all-list {
     background-color: rgb(46, 60, 98);
-    border: 0px;
+    border: 0;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding-top: 5px;
-    margin-bottom: 0%; 
+    margin-bottom: 0;
+    width: 100%;
+    /* Ensure it at least takes full viewport height */
 }
 
 .list {
     background-color: #f5f4f6;
-    border: 0px solid #fff;
+    border: 0 solid #fff;
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
     color: rgb(31, 42, 71);
-    flex-basis: 44%;
+    flex-basis: calc(44% - 40px); /* Adjusted for margin */
     margin: 20px;
     padding: 30px;
+    text-align: left;
 }
 
 .all-list h2 {
@@ -148,58 +168,51 @@ body {
     line-height: 1.867;
     margin-bottom: 5%;
     text-align: left;
-    
 }
 
 @media (max-width: 945px) {
-    .goals {
-        margin: 10px 0;
-        list-style: none;
-        text-align: center;
-    }
-
-    .all-list {
-        display: list-item;
-    }
-    
     .list {
-        margin: 50px;
+        flex-basis: calc(100% - 40px); /* Adjusted flex-basis for single column */
+        margin: 20px;
         padding: 15px;
     }
     
-    .all-list p{
+    .all-list p {
         font-size: 15px;
         margin: 2px;
         text-align: left;
     }
 }
-@media (max-width: 450px) {
-   .list {
-        margin: 50px;
-        padding: 10px;
-        display: absolute;
-        witdth: 100%;
-        flex: 1;
 
+@media (max-width: 450px) {
+    .list {
+        flex-basis: calc(100% - 40px); /* Full width for single column */
+        margin: 20px;
+        padding: 15px;
     }
 
     .all-list h2 {
-    font-size: 15px;
-    padding: 10px;
-    text-align: left;
+        font-size: 15px;
+        padding: 10px;
+        text-align: left;
     }
     
-    .all-list p{
+    .all-list p {
         font-size: 10px;
         margin: 2px;
         text-align: left;
     }
 }
 
-
 /* TIME AND DATE */
 .time-info p {
     font-size: 18px;
+}
+
+@media (max-width: 550px) {
+    .time-info p {
+        font-size: 16px;
+    }
 }
 
 /* FOOTER*/
@@ -208,6 +221,16 @@ footer {
     margin: 20px 0;
     text-align: center;
 }
+
+.resource {
+    background-color:rgb(46, 60, 98);
+    border-radius: 8px; 
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+} 
 
 .foot {
     color: #fff; 
@@ -230,4 +253,15 @@ footer {
 
 .foot a:hover {
     color: rgb(31, 42, 71); 
+}
+
+@media (max-width: 550px) {
+    .foot p {
+        font-size: 20px;
+    }
+
+    .foot a {
+        font-size: 15px;
+    }
+    
 }
