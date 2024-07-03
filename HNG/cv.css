@@ -75,7 +75,6 @@ body {
 }
 
 .image img {
-    border-radius:25px;
     height: auto;
     margin-left: auto;
     max-width: 100%;
